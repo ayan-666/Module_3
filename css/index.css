@@ -1,0 +1,29 @@
+h1:hover{
+    color: green;
+    font-size: 40px;
+    background-color: aqua;
+}
+input:focus{
+    color: green;
+    font-size: 50px;
+}
+li:first-child{
+    color: green;
+}
+li:last-child{
+    color: red;
+}
+li:nth-child(3){
+    color: blueviolet;
+}
+h1::before{
+    content: "😀";
+    
+}
+body{
+    counter-reset: section;
+}
+p::before{
+    counter-increment: section;
+    content: "Name" counter(section) ":";
+}
